@@ -3,10 +3,10 @@ pipeline {
 
     environment {
         AZ_API_KEY   = credentials('AZ_TOKEN')
-        PROJECT_KEY  = "TvIrAgIyArEtYzQhCQtixJRldHGqmMdF"
+        PROJECT_KEY  = "MOEXaDHzemcTzKPNFJcFjfQsopvzJzoi"
         REPO_URL     = "${env.GIT_URL ?: env.MERCURIAL_REPOSITORY_URL ?: env.JOB_NAME}"
     }
- 
+
     stages {
         stage('ArmourZero Security Test') {
             steps {
