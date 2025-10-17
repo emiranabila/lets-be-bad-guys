@@ -6,7 +6,7 @@ pipeline {
         PROJECT_KEY  = "TvIrAgIyArEtYzQhCQtixJRldHGqmMdF"
         REPO_URL     = "${env.GIT_URL ?: env.MERCURIAL_REPOSITORY_URL ?: env.JOB_NAME}"
     }
-
+ 
     stages {
         stage('ArmourZero Security Test') {
             steps {
